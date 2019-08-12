@@ -1,6 +1,6 @@
 import setuptools
 
-with open("README.md", "r") as fh:
+with open("README.rst", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.1.0",
     author="Deekshan Saravanan",
     author_email="dsstudios.dev@gmail.com",
-    description="Penetration Testing Tools Implemented in Python3",
+    description="Penetration Testing Tools Implemented in Python",
     long_description=long_description,
     url="https://www.github.com/dssecret/tigersec-tools",
     packages=setuptools.find_packages(),
