@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name='tigersec',
-    version="0.1.1",
+    version="0.1.2",
     author="Deekshan Saravanan",
     author_email="dsstudios.dev@gmail.com",
     description="Penetration Testing Tools Implemented in Python",
