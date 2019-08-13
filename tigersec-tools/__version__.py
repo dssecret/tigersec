@@ -1,4 +1,4 @@
-__title__ = 'tigersec-tools'
+__title__ = 'tigersec'
 __description__ = "Penetration Testing Tools Implemented in Python"
 __version__ = '0.1.1'
 __author__ = 'Deekshan Saravanan'

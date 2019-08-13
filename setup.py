@@ -4,13 +4,13 @@ with open("README.rst", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='tigersec-tools',
+    name='tigersec',
     version="0.1.1",
     author="Deekshan Saravanan",
     author_email="dsstudios.dev@gmail.com",
     description="Penetration Testing Tools Implemented in Python",
     long_description=long_description,
-    url="https://www.github.com/dssecret/tigersec-tools",
+    url="https://www.github.com/dssecret/tigersec",
     packages=setuptools.find_packages(),
     license="MIT License",
     classifiers=(
