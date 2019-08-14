@@ -8,7 +8,7 @@ def scan_port(ip, port):
     Scan port on certain IP address to check if open.
     :param ip: IP address
     :param port: port number
-    :return:
+    :return: port number or 0
     """
     connection = socket.socket()
     try:
@@ -17,7 +17,7 @@ def scan_port(ip, port):
         return port
     except socket.error as e:
         logger.info("Connection failed on port %s: %s" % (port, e))
-        return "Failed"
+        return 0
     finally:
         connection.close()
 
@@ -26,7 +26,7 @@ def scan_ip(ip):
     """
     Scan range of ports from 1 to 65535 using scan_port.
     :param ip: IP address
-    :return:
+    :return: None
     """
     for port in range(1, 65535):
         result = scan_port(ip, port)
@@ -53,8 +53,9 @@ if __name__ == "__main__":
 
     for port in range(1, 65535):
         result = scan_port(ip, port)
-        if result != "Failed":
+        if result != 0:
             valid_ports.append(int(result))
 
     print("Open Ports: " + str(valid_ports))
     logger.info("Open Ports: " + str(valid_ports))
+    logger.info("")
